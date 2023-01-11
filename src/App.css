@@ -27,50 +27,8 @@
   width: 70%;
   margin: 0 auto;
   border-radius: 10px;
+  background-size: cover;
 }
-
-.card{
-  width: 175px;
-  min-height: 150px;
-  background-color: #d1dca8;
-  border-radius: 5px;
-  font-size: 14px;
-  text-align: center;
-  justify-items: center;
-  margin: 5px auto 5px auto;
-  position: relative;
-}
-
-.card .day h3{
-  color: #3b2222;
-}
-
-.card .icon{
-  width: 100%;
-}
-
-.card .degree{
-bottom: 0;
-color: #3b2222;
-position: absolute;
-left: 5px;
-bottom:5px;
-font-size: 18px;
-font-weight: bold;
-}
-
-.card .degree span{
-    font-size: 12px;
-    bottom: 9px;
-    position: absolute;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 
 
 
@@ -137,7 +95,7 @@ img{
 
 
 .bubble.black {
-  background-color: #313E48;
+  background-color: #4e8dbd;
   position: relative;
   width: 100px;
   height: 100px;
@@ -154,7 +112,7 @@ img{
     left: 14px;
     border-style: solid;
     border-width: 29px 15px 0;
-    border-color: #313E48 transparent;
+    border-color: #4e8dbd transparent;
     display: block;
     width: 0;
     z-index: 1;
@@ -162,17 +120,10 @@ img{
   }
 
 
-
-.spin img{
-  animation: spin 5s linear infinite;
-  animation-play-state: paused;
+.morning{
+  background-image: url(https://cdn.pixabay.com/photo/2017/01/17/16/46/sky-1987411_960_720.png);
 }
 
-.box:hover .spin img{
-   animation-play-state: running;
-}
-@keyframes spin {
-  100% {
-    transform: rotate(1turn);
-  }
+.night{
+  background-image: url(https://cdn.pixabay.com/photo/2017/01/31/13/40/shooting-star-2024127_960_720.png);
 }
