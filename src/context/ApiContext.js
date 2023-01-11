@@ -8,7 +8,7 @@ export const ApiProvider = ({ children }) => {
   const { user } = useUser();
   const [weather, setWeather] = useState([]);
 
-  const APIKEY = "4f4ed0ffeb79b9ead4b818c34141b56c";
+  const APIKEY = "YOUR_API_KEY"; // You need to get api key from openweathermap.org
   const url = "https://api.openweathermap.org/data/2.5/forecast?";
   const latitude = user?.city.latitude;
   const longitude = user?.city.longitude;

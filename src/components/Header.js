@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useUser } from "../context/UserContext";
 
 const cities = [

@@ -1,14 +1,9 @@
-import { useEffect, useState } from "react";
-import { useUser } from "../context/UserContext";
 import { useApi } from "../context/ApiContext";
-import useApiContext from "../context/ApiContext";
 import DailyWeatherCard from "./DailyWeatherCard";
 import { FormatDate } from "../helpers/FormatDate";
 
 function Container() {
-  const { user, setUser } = useUser();
-  const { weather, setWeather } = useApi();
-  const [cards, setCards] = useState({});
+  const { weather } = useApi();
 
   let newList = [];
   let sameDates = [];
